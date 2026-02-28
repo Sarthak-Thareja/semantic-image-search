@@ -21,11 +21,11 @@ pip install -r requirements.txt
 ### 2. Create Sample Data & Index
 
 ```bash
-# Create demo images (placeholder colored squares)
-python scripts/create_sample_data.py --count 50
+# Download a diverse sample of real images from MS-COCO
+python scripts/create_sample_data.py --method hf --count 2000
 
-# Index into vector DB
-python scripts/index_dataset.py --dataset sample --max-items 50
+# Index the downloaded images and captions into the vector DB
+python scripts/index_dataset.py --dataset sample --max-items 2000
 ```
 
 ### 3. Start API (Terminal 1)
