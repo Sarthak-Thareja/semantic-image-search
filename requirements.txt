@@ -1,0 +1,32 @@
+# Multimodal Semantic Image-Text Retrieval System
+# Core
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# ML & Embeddings
+torch>=2.0.0
+open-clip-torch>=2.24.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Vector Database (ChromaDB - local, no API key; supports HNSW/cosine)
+chromadb>=0.4.22
+
+# Frontend
+streamlit>=1.29.0
+requests>=2.31.0
+
+# Data
+pycocotools>=2.0.7  # MS-COCO
+datasets>=2.16.0    # HuggingFace datasets (Flickr30k available)
+
+# Config & utils
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+
+# Dev & testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+httpx>=0.26.0
