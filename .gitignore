@@ -14,7 +14,7 @@ env.bak/
 venv.bak/
 
 # Data and Vector DB
-data/
+# data/ (uncommented to allow Render deployment on free tier limit)
 chroma/
 
 # IDEs
