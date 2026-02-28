@@ -27,6 +27,7 @@ class EncoderService:
             model, _, preprocess = open_clip.create_model_and_transforms(
                 settings.clip_model_name,
                 pretrained=settings.clip_pretrained,
+                precision="fp16",
             )
             tokenizer = open_clip.get_tokenizer(settings.clip_model_name)
             model.eval()
