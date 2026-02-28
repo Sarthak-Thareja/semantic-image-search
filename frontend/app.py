@@ -157,7 +157,7 @@ with tab_image:
                 st.success(f"Found {len(results)} similar images in {latency:.0f}ms")
                 col_a, col_b = st.columns([1, 3])
                 with col_a:
-                    st.image(uploaded, caption="Your image", use_container_width=True)
+                    st.image(uploaded, caption="Your image", use_column_width=True)
                 with col_b:
                     if results:
                         ncols = min(4, len(results))
