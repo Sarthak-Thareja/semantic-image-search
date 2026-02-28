@@ -15,7 +15,7 @@ venv.bak/
 
 # Data and Vector DB
 # data/ (uncommented to allow Render deployment on free tier limit)
-chroma/
+# chroma/ (uncommented to upload index)
 
 # IDEs
 .vscode/
@@ -25,7 +25,7 @@ chroma/
 
 # Logs and databases
 *.log
-*.sqlite3
+# *.sqlite3 (uncommented to upload chroma db)
 
 # Project specific
 test_ds.py
